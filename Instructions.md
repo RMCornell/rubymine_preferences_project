@@ -3,34 +3,47 @@
 Rubymine is extremely customizable. Here is some things that we think you should know,
 and some settings that we think will be helpful to you.
 
+## Installation instructions
+
+First let's begin by backing up your stock settings. This is beneficial if your settings become corrupted.
+
+When you first open Rubymine you will be presented with a small window with choices to open files. There is also a configure button on the bottom right.
+If you do not see this and a file opens, that's ok. Under configure you will see an option to 'export' your settings. Click this, rename the file to
+something different like clean_install, and store the file in a safe place. If a file opened for you, then on the top
+left of the screen you will see a 'file' menu. You can find the export option there as well.
+
+After you have a backup, simply select import settings, and choose the rubymine_turing.jar file in this repo. Install,
+and you should be set.
+
 
 
 The following can be accessed by pressing command + ',' (command and comma at the same time)
+when Rubymine is open.
 
 ### Keymap
 
 The default is set to **atom_turing**. There is a cheat sheet in the README to help get you started.
 There is also an option for sublime text, and Pivotal Labs IDE. These can be copied and customized if you so choose.
- 
+
 The following are from the atom cheat-sheet
 
 ##### General
  - Toggle command palette isn't set on Rubymine (not sure if it has a similar feature)
  - Toggle comment works
  - Show auto-completions pops up automatically. This does work, but pops up docs as well
- 
+
 ##### Find
  - Find in file works
  - Find next works
  - Find in project (pops up find in path) which i think will work
  - Use selection for find works
- 
+
 #####  View / window manipulation
  - Toggle sidebar works
  - Toggle fullscreen does not work
  - Split pane works
  - Focus pane works
- 
+
 ##### File Navigation
  - Toggle file finder doesn't work
  - Go to line works
@@ -38,17 +51,17 @@ The following are from the atom cheat-sheet
  - Previous / next file does not work
  - Set bookmark doesn't work
  - Go to next bookmark doesn't work
- 
+
 ##### Folding
  - Fold / unfold current code block doesn't work
  - Fold / unfold all doesn't work (opens maintenance)
  - Fold at depth doesn't work
- 
+
 ##### Word manipulation
  - Transpose characters doesn't work
  - no backspace
  - option + delete (deletes backwards one word)
- 
+
 ##### Line manipulation
  - indent / outdent works
  - command + enter (opens space after)  **these are backwards**
@@ -57,14 +70,14 @@ The following are from the atom cheat-sheet
  - move current line up / down works
  - duplicate current line works
  - join current and next lines works
- 
+
 ##### Selection
  - select current word works
  - select current line works
  - select to beginning / end of word works
  - select to first / last character of line works
  - select to top / bottom doesn't work (moves to top / bottom only)
- 
+
 
 
 ### Editor
@@ -106,9 +119,9 @@ Once you begin to use Github, you can enter your username and password to access
 
 ### Languages & Frameworks
 
-Here you will find Ruby SDK & gems. 
+Here you will find Ruby SDK & gems.
  **default Ruby set to version 2.2.1**
- 
+
   This is where you will see the installed versions of Ruby on your computer.
 
 
@@ -126,11 +139,11 @@ If you want to change your key bindings we would suggest that you first make a c
 
 
 
- 
+
 #### The following are some things that you should know about testing.
 
 If you attempt to run a test file from within Rubymine it will not be able to find file that you want to test.
-This is because it searches from the directory that the test was ran from. Since you will be using 'require' this won't work. 
+This is because it searches from the directory that the test was ran from. Since you will be using 'require' this won't work.
 
 To fix this you need to select 'Edit configurations' from the 'Run' menu. You see the path to the **Working Directory** It will look like /Users/your_name/path/to/project/test
 
